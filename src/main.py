@@ -14,10 +14,11 @@ info = ursina.Text(
 ursina.mouse.locked = True
 ursina.window.fullscreen = True
 ursina.window.title = "3D Game"
+platform_size = 20
 
 # Generate a basic platform
-for x in range(8):
-    for z in range(8):
+for x in range(platform_size):
+    for z in range(platform_size):
         voxel = Voxel(
             position = (x,0,z)
         )
